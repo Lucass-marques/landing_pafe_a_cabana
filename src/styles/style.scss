@@ -1,0 +1,48 @@
+@use 'variaveis';
+@use 'header';
+@use 'content';
+@use 'actors';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: variaveis.$corDeFundo;
+    font-family: Roboto, sans-serif;
+}
+
+@mixin title ($fontSize: 24px) {
+    font-size: $fontSize;
+    color: variaveis.$corDoTextoParagrafo;
+    font-weight: bold;
+}
+
+@mixin text ($fontSize: 20px) {
+    font-size: $fontSize;
+    color: variaveis.$corDoTextoParagrafo;
+    font-weight: 300;
+}
+
+.title {
+    @include title();
+}
+
+.title--big {
+    @include title(26px);
+}
+
+.title--small {
+    @include title(22px);
+}
+
+.text {
+    @include text();
+}
+
+.text--big {
+    @include text(22px);
+}
+
+.text--small {
+    @include text(16px);
+}

@@ -1,0 +1,46 @@
+@use 'variaveis';
+
+.actors {
+    &__title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 32px;
+        
+    }
+
+    &__titled {
+        border-bottom: 2px solid variaveis.$corDoTextoParagrafo;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        gap: 32px;
+        padding-top: 32px;
+        list-style-type: none;
+
+        &__item {
+            padding: 26px;
+            background-color: darken(variaveis.$corDeFundo, 5) ;
+            border-radius: 9px;
+            text-align: center;
+            transition: all .3s ease;
+
+            &__image {
+                height: 200px;
+                margin-bottom: 12px;
+                border-radius: 4px;
+            }
+
+            &__name {
+                color: #000;
+                border-bottom: 2px solid #000;
+                text-transform: uppercase;
+            }
+
+            &__real--name {
+                color: variaveis.$corDoTextoParagrafo;
+            }
+        }
+    }
+}

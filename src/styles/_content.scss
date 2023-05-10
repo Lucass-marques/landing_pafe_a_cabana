@@ -1,0 +1,31 @@
+@use 'variaveis';
+
+.content {
+    &__title {
+        h3 {
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 5.6vw;
+        align-items: center;
+
+        &__titulo {
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%
+        }
+
+        p {
+            padding-left: 70px;
+        }
+    }
+}
