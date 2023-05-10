@@ -12,9 +12,12 @@
 </head>
 <body>
     <section class="header">
-        <h1 class="header__logo">
-            <img src="./dist/images/a_cabana_logo.png" alt="A Cabana">
-        </h1>   
+        <div class="header__logo">
+            <picture>
+                <source media="(max-width: 768px)" srcset="./src/images/a_cabana_logo_celular.png">
+                <img src="./dist/images/a_cabana_logo.png" alt="A Cabana">
+            </picture>
+        </div>   
     </section>
 
     <section class="content">

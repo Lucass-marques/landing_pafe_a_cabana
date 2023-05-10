@@ -6,6 +6,10 @@
             text-transform: uppercase;
             text-align: center;
             margin-top: 20px;
+
+            @media (max-width: 768px) {
+                
+            }
         }
     }
 
@@ -14,6 +18,15 @@
         grid-template-columns: 1fr 1fr;
         padding: 5.6vw;
         align-items: center;
+
+        
+        @media (max-width: 768px) {
+            display: block;
+            margin-top: 20px;
+            
+        }
+
+        
 
         &__titulo {
             margin-bottom: 24px;

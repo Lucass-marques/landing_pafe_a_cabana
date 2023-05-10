@@ -19,6 +19,10 @@
         padding-top: 32px;
         list-style-type: none;
 
+        @media (max-width: 768px) {
+            display: block;
+        }
+
         &__item {
             padding: 26px;
             background-color: darken(variaveis.$corDeFundo, 5) ;
